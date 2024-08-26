@@ -1,0 +1,357 @@
+/* body {
+  background-image: url(s5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.bText {
+  position: relative;
+  height: 100vh;
+}
+
+.bText div {
+  background-image: url("/public/pictures/s5.png");
+  background-size: 200% 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  animation: focus 2s ease 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@keyframes focus {
+  0% {
+    filter: blur(10px);
+    transform: scale(1.1);
+  }
+
+  100% {
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}
+
+.bText h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main {
+  background-image: url("/public/pictures/bgmain.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.bText h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 200px;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  letter-spacing: 100px;
+}
+.navigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  margin-top: 500px;
+  box-shadow: 0px 0px 23px 0px rgba(177, 189, 223, 0.2);
+  border-radius: 15px;
+}
+
+.nav1 {
+  padding-right: 30px;
+  animation: gradient-button 1s ease infinite;
+  background-size: 200% 100%;
+}
+
+@keyframes gradient-button {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav1:hover {
+  transform: scale(1.2);
+  text-shadow: 6px 5px 3px black;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo {
+  position: fixed;
+  width: 200px;
+  animation: logo-rotate 5s ease-in infinite;
+}
+
+@keyframes logo-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1000px;
+  height: 1700px;
+}
+
+.son {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+
+  border-radius: 50px;
+  box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.301);
+
+  width: 1000px;
+  height: 400px;
+  background: linear-gradient(60deg, rgb(32, 3, 56), #362c5c);
+  background-size: 200% 100%;
+  animation: gradient-animation 3s ease infinite;
+  margin-top: 100px;
+
+  opacity: 0;
+  transition: opacity ease-in 0.5s;
+}
+
+.son.something {
+  opacity: 1;
+}
+
+.sonbratan {
+  position: relative;
+  bottom: 25px;
+}
+
+.jha {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+
+  border-radius: 50px;
+  box-shadow: 0px 0px 8px 6px rgba(255, 252, 90, 0.466);
+  width: 1000px;
+  height: 400px;
+  background: linear-gradient(60deg, rgb(174, 151, 192), rgb(52, 36, 54));
+  background-size: 200% 100%;
+  animation: gradient-animation 5s ease infinite;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  opacity: 0;
+  transition: opacity ease-in 0.5s;
+}
+
+.jha.something {
+  opacity: 1;
+}
+
+.jhasestra {
+  position: relative;
+  bottom: 25px;
+}
+
+.yoo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+
+  border-radius: 50px;
+  box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.301);
+
+  width: 1000px;
+  height: 400px;
+  background: linear-gradient(60deg, rgb(32, 3, 56), #bc5924);
+  background-size: 200% 100%;
+  animation: gradient-animation 5s ease infinite;
+  margin-bottom: 200px;
+
+  opacity: 0;
+  transition: opacity ease-in 0.5s;
+}
+
+.yoo.something {
+  opacity: 1;
+}
+
+.yoobratan {
+  position: relative;
+  bottom: 25px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 50px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+p {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+  font-size: 15px;
+  padding-left: 50px;
+  padding-bottom: 60px;
+  text-align: left;
+  color: white;
+}
+
+.navtxt {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: white;
+  font-size: 15px;
+}
+
+.span {
+  color: gold;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.aside h1,
+h2 {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+  padding-right: 20px;
+  text-align: right;
+  color: white;
+  transition: transform 0.5s ease-in-out;
+}
+
+.aside {
+  padding-bottom: 60px;
+}
+
+.aside h1:hover {
+  transform: scale(1.1);
+  text-shadow: 6px 5px 3px black;
+}
+
+.aside h2:hover {
+  transform: scale(1.1);
+  text-shadow: 6px 5px 3px black;
+}
+
+.bear {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: row;
+  animation: bear 3s linear infinite;
+}
+
+@keyframes bear {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.fade-out {
+  transition: opacity ease-in 0.5s, transform ease-in 0.5s;
+  animation: slide-down-fade-out 1s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes slide-down-fade-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(+170%);
+    opacity: 0;
+  }
+}
+
+.jumbo {
+  text-transform: uppercase;
+  transition: opacity ease-in 0.3s, transform ease-in-out 0.5s;
+  animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+}
+
+.jumbo.inactive {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.hidden {
+  display: none;
+}
