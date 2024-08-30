@@ -24,7 +24,6 @@ export function App() {
       }
 
       if (window.scrollY > 1050) {
-        console.log("Hello Tima 2");
         newShow.third = true;
       }
 
