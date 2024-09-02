@@ -6,6 +6,8 @@ export function App() {
     second: false,
     third: false,
   });
+  const [showcard, setShowCard] = useState("");
+  const [hidecard, setHideCard] = useState("");
 
   useEffect(() => {
     function onScroll(e) {
