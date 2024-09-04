@@ -6,8 +6,20 @@ export function App() {
     second: false,
     third: false,
   });
-  const [showcard, setShowCard] = useState("");
-  const [hidecard, setHideCard] = useState("");
+
+  const [cardIndex, setCardIndex] = useState(0);
+
+  // Массив карточек с данными
+  const cards = [
+    { title: "Информация" },
+    { title: "Способности" },
+    { title: "Статус" },
+  ];
+
+  // Функция для смены карточки
+  const handleChangeCard = () => {
+    setCardIndex((prevIndex) => (prevIndex + 1) % cards.length);
+  };
 
   useEffect(() => {
     function onScroll(e) {
@@ -49,9 +61,9 @@ export function App() {
         <div className="center">
           <div className={`son ${show.first ? "something" : ""}`}>
             <div className="aside">
-              <h1>Информация</h1>
-              <h2>Способности</h2>
-              <h2>Статус</h2>
+              <h1>{cards[cardIndex].title}</h1>
+              <h2>{cards[cardIndex].title}</h2>
+              <h2>{cards[cardIndex].title}</h2>
             </div>
             <img
               src="/pictures/son.png"
