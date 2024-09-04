@@ -9,14 +9,12 @@ export function App() {
 
   const [cardIndex, setCardIndex] = useState(0);
 
-  // Массив карточек с данными
   const cards = [
     { title: "Информация" },
     { title: "Способности" },
     { title: "Статус" },
   ];
 
-  // Функция для смены карточки
   const handleChangeCard = () => {
     setCardIndex((prevIndex) => (prevIndex + 1) % cards.length);
   };
